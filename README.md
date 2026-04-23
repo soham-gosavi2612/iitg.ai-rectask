@@ -31,26 +31,26 @@ Preliminary analysis was conducted to understand patterns and relationships:
 - Converted economic data from wide to long format and aligned it by year.
 - The following final features from economic dataset were extracted and then merged with the other two datasets with time as the axis.
   
-   - # Core demand drivers
+    **Core demand drivers**
    -'Electric power consumption (kWh per capita)',
    -'Population, total',
    -'Access to electricity (% of population)',
     
-   - # Economic scale & growth
+    **Economic scale & growth**
    - 'GDP (current US$)',
    - 'GDP growth (annual %)',
     
-   - # Industrial activity
+    **Industrial activity**
    - 'Industry (including construction), value added (% of GDP)',
     
-   - # System efficiency / losses
+    **System efficiency / losses**
    - 'Electric power transmission and distribution losses (% of output)',
     
-   - # Energy structure (keep ONLY 1–2, not all)
+    **Energy structure (kept ONLY 1–2, not all)**
    - 'Electricity production from natural gas sources (% of total)',
    - 'Electricity production from hydroelectric sources (% of total)',
     
-   - # Macro condition
+    **Macro condition**
    - 'Inflation, consumer prices (annual %)'
 ]
 
