@@ -2,7 +2,7 @@
 
 ## 1.Overview
 
-Our aim is to develop a machine-learning model to forecast electricity demand (MW) PGCB. The goal is to predict the next hour's demand using historical load data, weather information, and economic indicators. The final model achieves a **Mean Absolute Percentage Error (MAPE) of approximately 7.59%** on unseen test data.
+Our aim was to develop a machine-learning model to forecast electricity demand (MW) PGCB. The goal is to predict the next hour's demand using historical load data, weather information, and economic indicators. The final model achieves a **Mean Absolute Percentage Error (MAPE) of approximately 7.59%** on unseen test data.
 
 ## 2. Data Collection & Description
 
@@ -31,27 +31,27 @@ Preliminary analysis was conducted to understand patterns and relationships:
 - Converted economic data from wide to long format and aligned it by year.
 - The following final features from economic dataset were extracted and then merged with the other two datasets with time as the axis.
   
-    # Core demand drivers
-    'Electric power consumption (kWh per capita)',
-    'Population, total',
-    'Access to electricity (% of population)',
+   - # Core demand drivers
+   -'Electric power consumption (kWh per capita)',
+   -'Population, total',
+   -'Access to electricity (% of population)',
     
-    # Economic scale & growth
-    'GDP (current US$)',
-    'GDP growth (annual %)',
+   - # Economic scale & growth
+   - 'GDP (current US$)',
+   - 'GDP growth (annual %)',
     
-    # Industrial activity
-    'Industry (including construction), value added (% of GDP)',
+   - # Industrial activity
+   - 'Industry (including construction), value added (% of GDP)',
     
-    # System efficiency / losses
-    'Electric power transmission and distribution losses (% of output)',
+   - # System efficiency / losses
+   - 'Electric power transmission and distribution losses (% of output)',
     
-    # Energy structure (keep ONLY 1–2, not all)
-    'Electricity production from natural gas sources (% of total)',
-    'Electricity production from hydroelectric sources (% of total)',
+   - # Energy structure (keep ONLY 1–2, not all)
+   - 'Electricity production from natural gas sources (% of total)',
+   - 'Electricity production from hydroelectric sources (% of total)',
     
-    # Macro condition
-    'Inflation, consumer prices (annual %)'
+   - # Macro condition
+   - 'Inflation, consumer prices (annual %)'
 ]
 
 ### 4.2 Feature Engineering
